@@ -1,0 +1,202 @@
+:root {
+    --main-bg-color: whitesmoke;
+    --border-edge: 15px;
+}
+
+div {
+    border-radius: var(--border-edge);
+}
+
+body {
+    background-image: url(../images/backdrop.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 25px;
+}
+
+#picture-of-me {
+    float: left;
+    width: 450px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+#container {
+    background-color: transparent;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 20s ease infinite;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    border-radius: var(--border-edge);
+    opacity: 90%;
+}
+
+#content {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#nav {
+    background-color: var(--main-bg-color);
+    width: 160px;
+    float: left;
+    margin-right: 20px;
+}
+
+#main {
+    width: 1000px;
+    float: right;
+}
+
+#aboutme {
+    background-color: rgb(213, 233, 247);
+    padding: 5px 20px 20px 25px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    overflow: hidden;
+    animation-delay: 0.2s;
+}
+
+#experiences {
+    background-color: rgb(252, 216, 216);
+    padding: 5px 20px 20px 25px;
+    margin-bottom: 20px;
+    animation-delay: 0.5s;
+}
+
+#experiences h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    line-height: 50px;
+}
+
+#experiences .icon {
+    max-width: 15%;
+    height: auto;
+}
+
+#contact {
+    background-color: rgb(213, 247, 215);
+    padding: 5px 20px 20px 25px;
+    margin-bottom: 20px;
+    animation-delay: 0.8s;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#footer {
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    padding: 10px;
+    clear: both;
+    text-align: center;
+    border-radius: var(--border-edge);
+    opacity: 90%;
+}
+
+#footer .icon {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+}
+
+#footer .icon:hover {
+    opacity: 0.5;
+}
+
+.typewriter h1 {
+    font-weight: bold;
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: 5px; 
+    animation: 
+      typing 4s steps(100, end),
+        .3s step-end infinite;
+  }
+  
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes gradientBG {
+	0% {
+        background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+    }
+}
